@@ -7,13 +7,13 @@ import { parse as shellParseArgs } from "shell-quote";
 import {
   SSEClientTransport,
   SseError,
-} from "@modelcontextprotocol/sdk/client/sse.js";
+} from "@pavindulakshan/modelcontextprotocol-typescript-sdk/client/sse.js";
 import {
   StdioClientTransport,
   getDefaultEnvironment,
-} from "@modelcontextprotocol/sdk/client/stdio.js";
-import { Transport } from "@modelcontextprotocol/sdk/shared/transport.js";
-import { SSEServerTransport } from "@modelcontextprotocol/sdk/server/sse.js";
+} from "@pavindulakshan/modelcontextprotocol-typescript-sdk/client/stdio.js";
+import { Transport } from "@pavindulakshan/modelcontextprotocol-typescript-sdk/shared/transport.js";
+import { SSEServerTransport } from "@pavindulakshan/modelcontextprotocol-typescript-sdk/server/sse.js";
 import express from "express";
 import { findActualExecutable } from "spawn-rx";
 import mcpProxy from "./mcpProxy.js";

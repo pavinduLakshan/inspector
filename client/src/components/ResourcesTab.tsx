@@ -10,7 +10,7 @@ import {
   ListResourceTemplatesResult,
   ResourceReference,
   PromptReference,
-} from "@modelcontextprotocol/sdk/types.js";
+} from "@pavindulakshan/modelcontextprotocol-typescript-sdk/types.js";
 import { AlertCircle, ChevronRight, FileText, RefreshCw } from "lucide-react";
 import ListPane from "./ListPane";
 import { useEffect, useState } from "react";

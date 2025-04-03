@@ -1,4 +1,4 @@
-import { ServerNotification } from "@modelcontextprotocol/sdk/types.js";
+import { ServerNotification } from "@pavindulakshan/modelcontextprotocol-typescript-sdk/types.js";
 import { useState } from "react";
 import JsonView from "./JsonView";
 

@@ -1,8 +1,8 @@
-import { Client } from "@modelcontextprotocol/sdk/client/index.js";
+import { Client } from "@pavindulakshan/modelcontextprotocol-typescript-sdk/client/index.js";
 import {
   SSEClientTransport,
   SseError,
-} from "@modelcontextprotocol/sdk/client/sse.js";
+} from "@pavindulakshan/modelcontextprotocol-typescript-sdk/client/sse.js";
 import {
   ClientNotification,
   ClientRequest,
@@ -23,13 +23,13 @@ import {
   ResourceListChangedNotificationSchema,
   ToolListChangedNotificationSchema,
   PromptListChangedNotificationSchema,
-} from "@modelcontextprotocol/sdk/types.js";
+} from "@pavindulakshan/modelcontextprotocol-typescript-sdk/types.js";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 import { ConnectionStatus, SESSION_KEYS } from "../constants";
 import { Notification, StdErrNotificationSchema } from "../notificationTypes";
-import { auth } from "@modelcontextprotocol/sdk/client/auth.js";
+import { auth } from "@pavindulakshan/modelcontextprotocol-typescript-sdk/client/auth.js";
 import { authProvider } from "../auth";
 import packageJson from "../../../package.json";
 

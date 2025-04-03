@@ -2,7 +2,7 @@ import { useState, useCallback, useEffect, useRef } from "react";
 import {
   ResourceReference,
   PromptReference,
-} from "@modelcontextprotocol/sdk/types.js";
+} from "@pavindulakshan/modelcontextprotocol-typescript-sdk/types.js";
 
 interface CompletionState {
   completions: Record<string, string[]>;

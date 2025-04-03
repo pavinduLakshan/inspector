@@ -8,7 +8,7 @@ import {
   ListPromptsResult,
   PromptReference,
   ResourceReference,
-} from "@modelcontextprotocol/sdk/types.js";
+} from "@pavindulakshan/modelcontextprotocol-typescript-sdk/types.js";
 import { AlertCircle } from "lucide-react";
 import { useEffect, useState } from "react";
 import ListPane from "./ListPane";

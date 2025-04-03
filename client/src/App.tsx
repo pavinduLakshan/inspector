@@ -16,7 +16,7 @@ import {
   ServerNotification,
   Tool,
   LoggingLevel,
-} from "@modelcontextprotocol/sdk/types.js";
+} from "@pavindulakshan/modelcontextprotocol-typescript-sdk/types.js";
 import React, { Suspense, useEffect, useRef, useState } from "react";
 import { useConnection } from "./lib/hooks/useConnection";
 import { useDraggablePane } from "./lib/hooks/useDraggablePane";
@@ -204,8 +204,13 @@ const App = () => {
     localStorage.setItem(CONFIG_LOCAL_STORAGE_KEY, JSON.stringify(config));
   }, [config]);
 
+  const hasProcessedRef = useRef(false);
   // Auto-connect if serverUrl is provided in URL params (e.g. after OAuth callback)
   useEffect(() => {
+    if (hasProcessedRef.current) {
+      // Only try to connect once
+      return;
+    }
     const serverUrl = params.get("serverUrl");
     if (serverUrl) {
       setSseUrl(serverUrl);
@@ -219,6 +224,7 @@ const App = () => {
         title: "Success",
         description: "Successfully authenticated with OAuth",
       });
+      hasProcessedRef.current = true;
       // Connect to the server
       connectMcpServer();
     }

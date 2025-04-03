@@ -2,7 +2,7 @@ import { render, screen, fireEvent } from "@testing-library/react";
 import { describe, it, expect, jest } from "@jest/globals";
 import "@testing-library/jest-dom";
 import ToolsTab from "../ToolsTab";
-import { Tool } from "@modelcontextprotocol/sdk/types.js";
+import { Tool } from "@pavindulakshan/modelcontextprotocol-typescript-sdk/types.js";
 import { Tabs } from "@/components/ui/tabs";
 
 describe("ToolsTab", () => {

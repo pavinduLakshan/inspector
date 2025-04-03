@@ -26,7 +26,7 @@ import { StdErrNotification } from "@/lib/notificationTypes";
 import {
   LoggingLevel,
   LoggingLevelSchema,
-} from "@modelcontextprotocol/sdk/types.js";
+} from "@pavindulakshan/modelcontextprotocol-typescript-sdk/types.js";
 import { InspectorConfig } from "@/lib/configurationTypes";
 import { ConnectionStatus } from "@/lib/constants";
 import useTheme from "../lib/useTheme";

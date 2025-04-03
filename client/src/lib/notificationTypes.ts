@@ -2,7 +2,7 @@ import {
   NotificationSchema as BaseNotificationSchema,
   ClientNotificationSchema,
   ServerNotificationSchema,
-} from "@modelcontextprotocol/sdk/types.js";
+} from "@pavindulakshan/modelcontextprotocol-typescript-sdk/types.js";
 import { z } from "zod";
 
 export const StdErrNotificationSchema = BaseNotificationSchema.extend({

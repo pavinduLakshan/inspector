@@ -1,4 +1,4 @@
-import { Transport } from "@modelcontextprotocol/sdk/shared/transport.js";
+import { Transport } from "@pavindulakshan/modelcontextprotocol-typescript-sdk/shared/transport.js";
 
 function onClientError(error: Error) {
   console.error("Error from inspector client:", error);
