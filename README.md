@@ -61,6 +61,14 @@ If you're working on the inspector itself:
 
 Development mode:
 
+Install dependencies.
+
+```bash
+npm install
+```
+
+Run from project root.
+
 ```bash
 npm run dev
 ```
